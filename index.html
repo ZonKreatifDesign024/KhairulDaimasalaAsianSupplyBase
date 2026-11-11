@@ -32,7 +32,9 @@ position:relative;
 .profile{
 width:180px;
 height:180px;
-background:white;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(10px);
+border:4px solid white;
 border-radius:35px;
 overflow:hidden;
 position:absolute;
@@ -92,21 +94,29 @@ font-weight:bold;
 }
 
 .button{
+transition:0.3s;
 display:block;
 width:280px;
 margin:30px auto;
 padding:18px;
 border:2px solid navy;
 border-radius:50px;
-background:white;
-color:navy;
+background:#003366;
+color:white;
+transform:translateY(-3px);
 text-decoration:none;
 font-weight:bold;
 }
 
 .contact{
-padding:30px;
-}
+
+padding:40px;
+
+background:linear-gradient(
+180deg,
+#00AEEF 0%,
+#008ED1 100%
+);
 
 .contact h2{
 text-align:center;
@@ -177,6 +187,18 @@ width:100%;
 margin-top:20px;
 }
 
+.contact-right{
+
+background:white;
+
+padding:15px;
+
+border-radius:15px;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+
+}
+
 
 </style>
 
@@ -206,12 +228,23 @@ Khairul Bin Daimasala
 </div>
 
 <div class="job">
-Graphic Designer (Creative & Branding)
+Executive Graphic Designer (Creative & Branding)
 </div>
 
 <div class="company">
 Asian Supply Base Sdn. Bhd.
 </div>
+
+<div class="tag">
+LABUAN • MALAYSIA
+</div>
+
+.tag{
+font-size:12px;
+letter-spacing:2px;
+opacity:0.8;
+margin-top:10px;
+}
 
 <a href="contact.vcf" class="button">
 Save My Contact
@@ -228,17 +261,17 @@ Save My Contact
 <div class="contact-left">
 
 <div class="info">
-<div class="icon">📞</div>
+<i class="fas fa-phone"></i>
 <div>+018 870 3207</div>
 </div>
 
 <div class="info">
-<div class="icon">✉</div>
+<i class="fas fa-envelope"></i>
 <div>khairuldaimasala@asiansupplybase.com</div>
 </div>
 
 <div class="info">
-<div class="icon">🌐</div>
+<i class="fas fa-globe"></i>
 <div>
 <a href="https://asiansupplybase.my/" target="_blank">
 asiansupplybase.my
@@ -260,3 +293,19 @@ asiansupplybase.my
 
 </body>
 </html>
+
+<div class="footer">
+Powered by ZKD Khairul Daimasala
+</div>
+
+.footer{
+
+text-align:center;
+
+padding:20px;
+
+font-size:12px;
+
+color:#666;
+
+}
